@@ -12,4 +12,4 @@ COPY . .
 
 COPY ./dist ./dist
 
-CMD ["npm", "run"]
+CMD ["npm", "run", "start"]
