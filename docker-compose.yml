@@ -2,7 +2,6 @@ version:  '3.0'
 
 services:
   front:
-    container_name: front
     build:
       context: .
     env_file:
@@ -12,5 +11,5 @@ services:
       - /app/node_modules
     ports:
       - "5001:5001"
-    command: npm run start
+    command: yarn run start
     restart: always

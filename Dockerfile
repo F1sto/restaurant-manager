@@ -1,5 +1,4 @@
-FROM node:20.12.2
-LABEL authors="andreimisyurin"
+FROM node:20.12.2-alpine
 
 WORKDIR /app
 
@@ -9,7 +8,3 @@ COPY yarn.lock ./
 RUN yarn
 
 COPY . .
-
-COPY ./dist ./dist
-
-CMD ["npm", "run", "start"]
