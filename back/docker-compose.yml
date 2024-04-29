@@ -1,0 +1,14 @@
+version:  '3.0'
+
+services:
+  back:
+    build:
+      context: .
+    env_file:
+      - .development.env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
+    command: yarn run start

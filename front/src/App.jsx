@@ -8,7 +8,7 @@ function App() {
   const [serverMessage, setMessage] = useState('')
 
   async function fetchHelloData() {
-    const res = await fetch('http://localhost:3000/get-hello');
+    const res = await fetch('http://localhost:8080/get-hello');
     const {message} = await res.json();
     setMessage(message);
   }

@@ -10,6 +10,5 @@ services:
       - .:/app
       - /app/node_modules
     ports:
-      - "5001:5001"
+      - "5002:5002"
     command: yarn run start
-    restart: always
